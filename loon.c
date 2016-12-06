@@ -149,7 +149,7 @@ int main (int argc, char * argv[]) {
 				case -1:
 					if (altitudes[k] <= 1) {
 						printf("Impossible to decrease altitude of baloon %d. ", k);
-						printf("Altitude is already %d\n", loons[k].levels[step]);
+						printf("Altitude is already %d\n", altitudes[k]);
 						return 3;
 					}
 					altitudes[k]--;
@@ -159,7 +159,7 @@ int main (int argc, char * argv[]) {
 				case 1:
 					if (altitudes[k] == nbAlts) {
 						printf("Impossible to increase altitude of baloon %d. ", k);
-						printf("Altitude is already %d\n", loons[k].levels[step]);
+						printf("Altitude is already %d\n", altitudes[k]);
 						return 3;
 					}
 					if (altitudes[k] == 0) {
